@@ -2,7 +2,7 @@ from docx import Document
 import os
 
 # Define paths
-input_file = "TestData/DGP.docx"
+input_file = "TestData/DGP_1.docx"
 image_dir = "img"
 
 # Create image directory if not exists
@@ -48,30 +48,30 @@ def iter_block_items(parent):
                     yield subchild
 
 for element in doc.element.getiterator():
-    # print(element)
-    if element.tag.endswith('p'):  # Paragraph
-        texts = []
-        for run in element.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t"):
-            texts.append(run.text)
-        if texts:
-            content.append(('text', ''.join(texts)))
-    elif element.tag.endswith('tbl'):  # Table
-        table_data = []
-        for row in element.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tr"):
-            row_data = []
-            for cell in row.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tc"):
-                cell_texts = []
-                for paragraph in cell.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p"):
-                    for run in paragraph.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t"):
-                        cell_texts.append(run.text)
-                row_data.append(''.join(cell_texts))
-            table_data.append(row_data)
-        content.append(('table', table_data))
-    elif element.tag.endswith(('pic')):  # Image
-        for blip in element.iter("{http://schemas.openxmlformats.org/drawingml/2006/main}blip"):
-            embed = blip.get("{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed")
-            if embed in images:
-                content.append(('image', images[embed]))
+    print(element)
+    # if element.tag.endswith('p'):  # Paragraph
+    #     texts = []
+    #     for run in element.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t"):
+    #         texts.append(run.text)
+    #     if texts:
+    #         content.append(('text', ''.join(texts)))
+    # elif element.tag.endswith('tbl'):  # Table
+    #     table_data = []
+    #     for row in element.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tr"):
+    #         row_data = []
+    #         for cell in row.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tc"):
+    #             cell_texts = []
+    #             for paragraph in cell.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p"):
+    #                 for run in paragraph.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t"):
+    #                     cell_texts.append(run.text)
+    #             row_data.append(''.join(cell_texts))
+    #         table_data.append(row_data)
+    #     content.append(('table', table_data))
+    # elif element.tag.endswith(('pic')):  # Image
+    #     for blip in element.iter("{http://schemas.openxmlformats.org/drawingml/2006/main}blip"):
+    #         embed = blip.get("{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed")
+    #         if embed in images:
+    #             content.append(('image', images[embed]))
 
 # Save the content list for reconstruction
 with open(os.path.join(image_dir, 'content.txt'), 'w') as f:
