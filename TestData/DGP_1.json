@@ -1,0 +1,286 @@
+{
+    "paragraphs": [
+        {
+            "text": "Mục lục:",
+            "properties": {
+                "style": "Title",
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "Mục lục:",
+                    "properties": {
+                        "bold": true,
+                        "underline": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "",
+            "properties": {
+                "style": "LO-normal",
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "",
+                    "properties": {
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "Hướng dẫn chạy script tổng hợp thông tin các phần mềm cài đặt trên máy ",
+            "properties": {
+                "style": "Title",
+                "alignment": "CENTER (1)",
+                "left_indent": 36.0,
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "Hướng dẫn chạy script tổng hợp thông tin các phần mềm cài đặt trên máy ",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 24.0,
+                        "font_name": "Times New Roman",
+                        "font_color": "0000FF"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "Đối với Window:",
+            "properties": {
+                "style": "Heading 1",
+                "left_indent": 36.0,
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "Đối với Window:",
+                    "properties": {
+                        "bold": true,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "Bước 1: Truy cập vào folder dưới đây:",
+            "properties": {
+                "style": "LO-normal",
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "Bước 1: ",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                },
+                {
+                    "text": "Truy cập vào folder dưới đây:",
+                    "properties": {
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "old_text",
+            "properties": {
+                "style": "LO-normal",
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "old_text",
+                    "properties": {
+                        "font_color": "C9211E"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "Script",
+            "properties": {
+                "style": "LO-normal",
+                "left_indent": 85.5,
+                "line_spacing": 1.5
+            },
+            "runs": []
+        },
+        {
+            "text": "Trong thư mục mới hiện ra 3 script, bạn download file script window-docker.ISO.HN.ps1 về và copy sang thư mục C:\\Users\\Public trong ổ C. ",
+            "properties": {
+                "style": "LO-normal",
+                "left_indent": 54.0,
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "Trong thư mục mới hiện ra 3 script, bạn download file script",
+                    "properties": {
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                },
+                {
+                    "text": " ",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                },
+                {
+                    "text": "window-docker.ISO.HN.ps1",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman",
+                        "font_color": "FF0000"
+                    }
+                },
+                {
+                    "text": " về và copy sang thư mục ",
+                    "properties": {
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                },
+                {
+                    "text": "C:\\Users\\Public",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman",
+                        "font_color": "FF0000"
+                    }
+                },
+                {
+                    "text": " trong ổ C. ",
+                    "properties": {
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "*Lưu ý: nếu như các bạn đã có sẵn file cũ trong thư mục này. Hãy xóa file cũ đi và copy file mới vào. Tránh để file có đuôi có số (1), (2), ...",
+            "properties": {
+                "style": "LO-normal",
+                "left_indent": 54.0,
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "*Lưu ý:",
+                    "properties": {
+                        "bold": true,
+                        "underline": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                },
+                {
+                    "text": " ",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                },
+                {
+                    "text": "nếu như các bạn đã có sẵn file cũ trong thư mục này. Hãy xóa file cũ đi và copy file mới vào. Tránh để file có đuôi có số (1), (2), ...",
+                    "properties": {
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "",
+            "properties": {
+                "style": "LO-normal",
+                "alignment": "CENTER (1)",
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "",
+                    "properties": {}
+                }
+            ]
+        },
+        {
+            "text": "",
+            "properties": {
+                "style": "LO-normal",
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "",
+            "properties": {
+                "style": "LO-normal",
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        },
+        {
+            "text": "Bước 2: Chạy script:",
+            "properties": {
+                "style": "LO-normal",
+                "line_spacing": 1.5
+            },
+            "runs": [
+                {
+                    "text": "Bước 2:",
+                    "properties": {
+                        "bold": true,
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                },
+                {
+                    "text": " Chạy script:",
+                    "properties": {
+                        "font_size": 12.0,
+                        "font_name": "Times New Roman"
+                    }
+                }
+            ]
+        }
+    ]
+}

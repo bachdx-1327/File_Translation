@@ -5,18 +5,16 @@ def translate_run_text(run_text):
     return vi2ja(run_text)
 
 def translate_paragraph(paragraph):
-    print("-----------------")
-    print(paragraph.text)
     for run in paragraph.runs:
         if run.text.strip():
             print(run.text)
             # print(len(run.text))
-            if len(run.text) <= 2: 
-                pass
-            else:
-                translated_text = translate_run_text(run.text)
-                run.text = translated_text
-                # print(translated_text)
+            # if len(run.text) <= 2: 
+            #     pass
+            # else:
+            #     translated_text = translate_run_text(run.text)
+            #     run.text = translated_text
+            #     # print(translated_text)
     
 
 def translate_table(table):
@@ -45,8 +43,8 @@ def translate_docx(input_path, out_path):
     # Save the translated document
     doc.save(out_path)
 
-input_path = "TestData/DGP.docx"
-out_path = "document_5.docx"
+input_path = "TestData/Sun_AI_Press_Releas2023.docx"
+out_path = "document_6.docx"
 
 # Translate the docx file
 translate_docx(input_path, out_path)
